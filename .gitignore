@@ -8,3 +8,5 @@ header.tmp
 .out
 .log
 .gz
+.fls
+.fdb_latexmk
