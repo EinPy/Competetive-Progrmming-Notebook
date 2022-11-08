@@ -5,8 +5,8 @@
 a.out
 header.tmp
 .vscode
-*out
+*.out
 *.gz
 *.fls
 *.fdb_latexmk
-
+*.synctex.gz
