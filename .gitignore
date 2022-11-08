@@ -5,3 +5,6 @@
 a.out
 header.tmp
 .vscode
+.out
+.log
+.gz
