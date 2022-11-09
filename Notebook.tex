@@ -20,6 +20,11 @@
 \usepackage[normalem]{ulem}
 \usepackage[hidelinks]{hyperref}        % For clickable table of contents
 
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+
 
 %get borders for document
 \setlength{\columnseprule}{0.5pt} % Multicol separation line with
@@ -60,11 +65,12 @@
 \begin{document}
     \begin{multicols*}{3}
 
-        \input{contest/contest}
+        \input{contest/contest}\\
 
-        \input{math/math}
+        \input{math/math}\\
+        \input{graph/graph}\\
         \input{data-structures/data-structures}
-        % to add numeriical, number theory, graph, geometry, string, various
+        % to add numeriical, number theory, geometry, string, various
         
     \end{multicols*}
 
