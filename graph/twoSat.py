@@ -52,7 +52,7 @@ class Sat:
         return True
 
     # assumes is_sat. 
-    # If ¬xi is after xi in topological sort,
+    # If not xi is after xi in topological sort,
     # xi should be FALSE. It should be TRUE otherwise.
     # https://codeforces.com/blog/entry/16205
     def solution(self):
