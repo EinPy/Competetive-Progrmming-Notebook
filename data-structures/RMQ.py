@@ -10,9 +10,8 @@ class RMQ:
             self.data[i][0] = arr[i]
         for j in range(1, LOGMAXN):
             for i in range(MAXN - (1<<j)+1):
-                self.data[i][j] = func(
-                    self.data[i][j-1], 
-                    self.data[i + (1<<(j-1))][j-1])
+                self.data[i][j] = func(self.data[i][j-1], 
+                        self.data[i + (1<<(j-1))][j-1])
 
     def query(self, a, b):
         if a > b:
