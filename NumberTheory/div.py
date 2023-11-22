@@ -7,6 +7,10 @@ import math
 def gcd(a, b):
     return b if a%b == 0 else gcd(b, a%b)
 
+def lcm ( a, b) :
+    return a / math.gcd(a, b) * b
+
+
 # returns b where (a*b)%MOD == 1
 def inv(a, MOD):
     return pow(a, -1, MOD)
